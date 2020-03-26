@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+
+/* Formatações Cabeçalho */
+
+header#cabecalho {
+	background-color: rgb(255, 255, 255);
+	border-bottom: 10px solid rgb(66,18,45);
+	margin: -20px;
+	position: fixed; 
+	z-index: 300;
+	width: 100%;
+	height: 25%;
+}
+
+div.logo-menu {
+	margin: 10px;
+	padding: 10px;
+}
+
+img.logo-logo {
+	font-size: 20px;
+}
+
+div.titulo {
+	text-align: center;
+	position: relative;
+	bottom: 200px;
+}
+
+div.titulo h1 {
+	font-family: 'Baloo 2', cursive;
+	font-size: 75px;
+	color: rgb(66,18,45);
+	line-height: 10px;
+}
+
+div.titulo h2 {
+	font-family: 'Baloo 2', cursive;
+	font-size: 30px;
+	color: rgb(91, 94, 100);
+	line-height: 10px;
+}
+
+nav.menu-navegacao {
+
+}
+div.menu {
+	display: block;
+}
+
+div.menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+	bottom: 170px;
+	left: 1265px;
+}
+
+div.menu li {
+	display: inline-block;
+	background-color: rgb(66,18,45);
+	padding: 10px;
+	margin: 2px;
+	transition: 1s;
+	font-family: 'Baloo 2', cursive;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div.menu li:hover {
+	background-color: rgb(114, 112, 112); 
+}
+
+div.menu a {
+	color: rgb(255,255,255);
+	text-decoration: none;
+}	
+
+div.menu a:hover {
+	color: rgb(255,255,255); 
+	text-decoration: underline;
+}
+
+/* Formatações Perfil */
+
+section.perfil-class {
+	background-color:  rgb(66,18,45);
+	border: 10px solid rgb(66,18,45);
+	margin: -10px;
+	height: 800px;
+	width: 100%;
+
+}
+
+img.perfil-ana {
+	position: relative;
+	top: 225px;
+	border-radius: 250px;
+	margin-left: 100px;
+}
+
+div.descricao-ana { 
+	background-color: rgb(255,255,255);
+	width: 1150px;
+	font-family: 'Baloo 2', cursive;
+	font-size: 25px;
+	color: rgb(66,18,45);
+	text-align: center;
+	position: relative;
+	left: 700px;
+	bottom: 300px;
+}
+
+
+/* Formatações Objetivo e Atuacao */
+
+section.objetivo-class {
+	background-color: rgb(143, 137, 137);
+	border-bottom: 10px solid rgb(66,18,45);
+	width: 100%;
+	height: 1000px;
+	margin: -20px;
+	height: 800px;
+	width: 100%;
+}
+
+div.objetivo-atuacao{
+	font-family: 'Baloo 2', cursive;
+	font-size: 25px; 
+	text-align: center;
+}
+
+div.objetivo-work {
+	background-color: rgb(255, 255, 255);
+}
+
+div.atuacao {
+	background-color: rgb(255, 255, 255);
+}
+
+
+/* Formatações Skills */
+
+section.skills-class {
+	background-color: rgb(255, 255, 255);
+	border-bottom: 10px solid rgb(255, 255, 255);
+	width: 100%;
+	height: 500px;
+	font-family: 'Baloo 2', cursive;
+	font-size: 25px; 
+	text-align: center;
+
+}
+
+div.hard {
+	background-color: rgb(143, 137, 137);
+}
+
+table#Hard_Skills {
+	position: relative;
+	left: 600px;
+}
+
+table#Hard_Skills caption  {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+div.soft {
+	background-color: rgb(143, 137, 137);
+}
+
+table#Soft_Skills {
+	position: relative;
+	left: 1000px;
+	bottom: 325px;
+}
+
+table#Soft_Skills caption  {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/* Formatações Formação */
+
+section.formacao-class {
+	background-color: rgb(66,18,45);
+	border: 10px solid rgb(66,18,45);
+	width: 100%;
+	height: 1400px;
+	font-family: 'Baloo 2', cursive;
+	font-size: 35px; 
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+section.menu-formacao {
+	font-size: 20px;
+	width: 100%;
+	height: 300px;
+}
+
+div.pos {
+	background-color: rgb(143, 137, 137);
+	color: rgb(0,0,0);
+	font-size: 17px;
+	line-height: 1.5em; 
+	border: 20px;
+	text-align: center;
+	height: 205px;
+	float: left;
+	width: 25%;
+	margin-left: 100px;
+}
+
+div.graduacao {
+	background-color: rgb(143, 137, 137);
+	color: rgb(0,0,0);
+	font-size: 18px;
+	line-height: 1.5em; 
+	border: 20px;
+	text-align: center;
+	height: 205px;
+	float: left;
+	width: 25%;
+	margin-left: 150px;
+}
+
+div.tecnico {
+	background-color: rgb(143, 137, 137);
+	color: rgb(0,0,0);
+	font-size: 18px;
+	line-height: 1.5em; 
+	border: 20px;
+	text-align: center;
+	height: 205px;
+	float: right;
+	width: 25%;
+	margin-right: 100px;
+}
+
+section.cursos {
+	font-size: 20px;
+	width: 100%;
+	height: 300px;
+}
+
+div.computacao1 {
+	float: left;
+	width: 25%;
+	margin-left: 200px;
+}
+
+div.computacao2 {
+	float: right;
+	width: 25%;
+	margin-right: 200px;
+}
+div.trybe, div.dmax, div.revit, div.autocad  {
+	background-color: rgb(143, 137, 137);
+	color: rgb(0,0,0);
+	font-size: 18px;
+	line-height: 1.5em; 
+	border: 20px;
+	text-align: center;
+	height: 100px;
+}
+
+section.outros-cursos {
+	font-size: 20px;
+	width: 100%;
+	height: 600px;
+}
+
+div.outros1 {
+	float: left;
+	width: 25%;
+	margin-left: 200px;
+}
+
+div.outros2 {
+	float: right;
+	width: 25%;
+	margin-right: 200px;
+}
+
+div.obra, div.paisagismo, div.jardinagem, div.marcenaria, div.bio-arquitetura, div.feng-shui  {
+	background-color: rgb(143, 137, 137);
+	color: rgb(0,0,0);
+	font-size: 18px;
+	line-height: 1.5em; 
+	border: 20px;
+	text-align: center;
+	height: 100px;
+}
+
+div.aqua {
+	background-color: rgb(143, 137, 137);
+	color: rgb(0,0,0);
+	font-size: 18px;
+	line-height: 1.5em; 
+	border: 20px;
+	text-align: center;
+	height: 180px;
+}
+
+/* Formatações Rodapé */
+
+footer#rodape{
+	background-color: rgb(255, 255, 255);
+
+
+}
