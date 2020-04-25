@@ -5,153 +5,238 @@
 	<meta charset="UTF-8"/>
 	<title>AH! Ana Higo</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
+<style>
+	/* article */
+	.academica-section{
+		align-items: center;
+		background-color: rgb(66,18,45);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 50px 0px;
+	}
+
+	.h2-academica{
+		background-color: rgb(255,255,255);
+		color: rgb(66,18,45);
+		text-align: center;
+		width: 80%;
+		padding: 20px 70px;
+	}
+
+	.academica {
+		align-items: flex-start;
+		background-color: rgb(255,255,255);	
+		color: rgb(66,18,45);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		text-align: left;
+		padding: 20px;
+		width: 80%;
+	}
+
+	.outros-section{
+		align-items: center;
+		background-color: rgb(91, 94, 100);
+		display: flex;
+		flex-direction: column;
+		padding: 50px 0px;
+		width: 100%;
+	}
+
+	.h2-outros{
+		background-color: rgb(255,255,255);
+		color: rgb(91, 94, 100);
+		text-align: center;
+		width: 80%;
+		padding: 20px 70px;
+	}
+
+	.computacao-outros {
+		align-items: flex-start;
+		background-color: rgb(255,255,255);	
+		color: rgb(66,18,45);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		text-align: left;
+		padding: 20px;
+		width: 80%;
+	}
+	
+	.h3-subtitle {
+		font-size: 130%;
+
+	}
+</style>
 
 <body>
+
 <!-- início cabeçalho  -->
 	<header>
-		<div class="container-header1">
-			<div class="logo">
-				<a href="index.html"><img class="logo-logo" src="logo.png"/></a>
+		<div class="container">
+			<div class="container-header-main">
+				<div class="logo-logo">
+					<a href="index.html"><img class="logo-logo" src="logo.png"></a>
+				</div>
+
+				<div class="text-title">
+					<h1>Ana Higo</h1>
+					<h2>Arquiteta, Empreendedora na Área de Alimentação e Estudante de Desenvolvimento de Software</h2>
+				</div>	
+				<div class="main-empty"></div>
 			</div>
 
-			<div class="titulo">
-				<h1>Ana Higo</h1>
-				<h2>Arquiteta, Empreendedora na Área de Alimentação e Estudante de Desenvolvimento de Software</h2>
+			<div class="container-header-menu">
+				<div class="menu-empty"></div>
+				<nav class= "menu-navegacao-site">
+					<ul>
+						<li><a href="index.html">Apresentação</a></li>
+						<li><a href="perfil.html">Mais sobre Ana</a></li>
+						<li><a href="experiencia.html">Experiências Profissionais</a></li>
+						<li><a href="formacao.html">Formação Acadêmica e Cursos</a></li>
+					</ul>
+				</nav>
 			</div>
-		</div>
-
-		<div class="container-header2"></div>
-			<nav class= "menu-navegacao-site">
-				<ul>
-					<li><a href="perfil.html">Mais sobre Ana</a></li>
-					<li><a href="experiencia.html">Experiências Profissionais</a></li>
-					<li><a href="formacao.html">Formação Acadêmica e Cursos</a></li>
-				</ul>
-			</nav>
-			<nav class="menu-navegacao-pagina">
-				<ul>
-					<li><a href="#academica">Formação Acadêmica</a></li>
-					<li><a href="#computaçao">Cursos Computação</a></li>
-					<li><a href="#outros">Outros Cursos</a></li>
-				</ul>
-			</nav>
 		</div>
 	</header>
+	<div class="header-empty"></div>
 
 <!-- início formação acadêmica -->
 	<article>
-		<section id="academica" class="academica">
-			<h1>FORMAÇÃO ACADÊMICA</h1>
-			<div class="pos"> 
-				<h3>SUSTENTABILIDADE DAS EDIFICAÇÕES |<br>
-				PÓS-GRADUAÇÃO LATO SENSU | <br>
-				UNIVERSIDADE PRESBITERIANA MACKENZIE |<br>
-				JAN 2010 - DEZ 2011 | SÃO PAULO, SP</h3>
-				<p>Tema: “Diretrizes Sustentáveis para Renovação <br> dos Edifícios na Região Central de São Paulo”</p>
-			</div>
+		<section id="academica-section" class="academica-section">
+			<h2 class="h2-academica">FORMAÇÃO ACADÊMICA</h2>
 
-			<div class="graduacao"> 
-			 	<h3>ARQUITETURA E URBANISMO |<br>
-				GRADUAÇÃO | <br>
-				CENTRO UNIVERSITÁRIO <br> BELAS ARTES DE SÃO PAULO |<br>
-				JAN 2004 - DEZ 2008 | SÃO PAULO, SP</h3>
-				<p>Projeto: “Hotel-SPA Sustentável”</a></p>
-			</div>
+			<div class="academica">
+				<div class="sustentabilidade"> 
+					<h3>SUSTENTABILIDADE DAS EDIFICAÇÕES |<br>
+					PÓS-GRADUAÇÃO LATO SENSU | <br>
+					UNIVERSIDADE PRESBITERIANA MACKENZIE |<br>
+					JAN 2010 - DEZ 2011 | SÃO PAULO, SP</h3>
+					<p>Tema: “Diretrizes Sustentáveis para Renovação <br> dos Edifícios na Região Central de São Paulo”</p>
+				</div>
 
-			<div class="tecnico"> 
-				<h3>DESIGN DE INTERIORES |<br>
-				CURSO TÉCNICO |<br>
-				ESCOLA PANAMERICANA DE ARTES |<br>
-				MAR 1999 – NOV 2001 | SÃO PAULO, SP </h3> 
-			</div>
+				<div class="arquitetura"> 
+			 		<h3>ARQUITETURA E URBANISMO |<br>
+					GRADUAÇÃO | <br>
+					CENTRO UNIVERSITÁRIO <br> BELAS ARTES DE SÃO PAULO |<br>
+					JAN 2004 - DEZ 2008 | SÃO PAULO, SP</h3>
+					<p>Projeto: “Hotel-SPA Sustentável”</a></p>
+				</div>
+
+				<div class="interiores"> 
+					<h3>DESIGN DE INTERIORES |<br>
+					CURSO TÉCNICO |<br>
+					ESCOLA PANAMERICANA DE ARTES |<br>
+					MAR 1999 – NOV 2001 | SÃO PAULO, SP </h3> 
+				</div>
+			</div>	
 		</section>
 
-		<section class="computacao" id="computacao">
-			<h2>CURSOS DE DESENVOLVIMENTO DE SOFTWARE E COMPUTAÇÃO GRÁFICA </h2>
-			<div class="trybe">
-				<h3>DESENVOLVIMENTO DE SOFTWARE |<br>
-				TRYBE |<br>
-				MAR 2020 - PREVISÃO MAR 2021 | SÃO PAULO, SP </h3> 
-			</div>
+		<section class="outros-section" id="outros-section">
+			<h2 class="h2-outros">OUTROS CURSOS</h2>
+			<div class="computacao-outros">
+				<div class="outros">
+					<div class="outros-title">
+						<h3 class="h3-subtitle">CURSOS DE DESENVOLVIMENTO DE <br> SOFTWARE E COMPUTAÇÃO GRÁFICA</h3><br>
+					</div>
 
-			<div class="dmax">
-				<h3>MAQUETE ELETRÔNICA 3D MAX |<br> 
-				ALPHACHANNEL |<br> 
-				SET 2013 | SÃO PAULO, SP</h3>
+					<div class="trybe">
+						<h3>DESENVOLVIMENTO DE SOFTWARE |<br>
+						TRYBE |<br>
+						MAR 2020 - PREVISÃO MAR 2021 | SÃO PAULO, SP </h3> <br>
+					</div>
+
+					<div class="dmax">
+						<h3>MAQUETE ELETRÔNICA 3D MAX |<br> 
+						ALPHACHANNEL |<br> 
+						SET 2013 | SÃO PAULO, SP</h3><br>
+					</div>	
+
+					<div class="revit">
+						<h3>CURSO BÁSICO REVIT 2008 |<br>
+						SENAC |<br>
+						JUL 2009 | SÃO PAULO, SP</h3><br>
+					</div>
+
+					<div class="autocad"> 
+						<h3>CURSO CAD DESIGN 2004 |<br>
+						SENAC |<br>
+						OUT 2006 | SÃO PAULO, SP </h3><br>
+					</div>
+				</div>
+				<div class="outros">
+					<div class="outros-title">
+						<h3 class="h3-subtitle">OUTROS CURSOS</h3><br>
+						</div>
+				
+					<div class="obra"> 					
+						<h3>CURSO MESTRE DE OBRAS |<br> 
+						INSTITUTO DA CONSTRUÇÃO |<br>
+						MAR 2017 | SÃO PAULO, SP</h3><br>
+					</div>
+
+					<div class="paisagismo">	
+						<h3>RECURSOS PAISAGÍSTICOS  |<br>
+						UMAPAZ |<br> 
+						JUN 2016 | SÃO PAULO, SP</h3><br>
+					</div>
+
+					<div class="jardinagem">
+						<h3>JARDINAGEM |<br>
+						UMAPAZ|<br>
+						NOV 2015 | SÃO PAULO, SP</h3><br>
+					</div>
+
+					<div class="marcenaria">	
+						<h3>MARCENARIA | PROJETO E CONSTRUÇÃO 1 |<br>
+						OFICINALAB |<br>
+						MAI 2015 | SÃO PAULO, SP</h3><br>
+					</div>
+				</div>	
+				<div class="outros">
+					<div class="aqua">
+						<h3>AQUA |<br>
+						FORMAÇÃO DE AUDITORES AQUA |<br>
+						DOMINANDO O REFERENCIAL TÉCNICO AQUA |<br>
+						INTRODUÇÃO AO REFERENCIAL TÉCNICO AQUA |<br>
+						FUNDAÇÃO VANZOLINI |<br>
+						DEZ 2010 | SÃO PAULO, SP</h3><br>
+					</div>
+
+					<div class="bio">
+						<h3>BIO ARQUITETURA E BIO DESIGN |<br> 
+						UNIPAZ |<br>
+						MAI 2009 | SÃO PAULO, SP</h3><br>
+					</div>
+
+					<div class="feng-shui">
+						<h3>FENG SHUI |<br>
+						ESCOLA ESTRELA DA FELICIDADE |<br>
+						NOV 2000 | SÃO PAULO, SP</h3><br>
+					</div>
+				</div>
 			</div>	
-
-			<div class="revit">
-				<h3>CURSO BÁSICO REVIT 2008 |<br>
-				SENAC |<br>
-				JUL 2009 | SÃO PAULO, SP</h3>
-			</div>
-
-			<div class="autocad"> 
-				<h3>CURSO CAD DESIGN 2004 |<br>
-					SENAC |<br>
-					OUT 2006 | SÃO PAULO, SP </h3>
-			</div>
-		</section>	
-		<section class="outros" id="outros">
-			<h2>OUTROS CURSOS</h2>
-			<div class="obra"> 					
-				<h3>CURSO MESTRE DE OBRAS |<br> 
-				INSTITUTO DA CONSTRUÇÃO |<br>
-				MAR 2017 | SÃO PAULO, SP</h3> 
-			</div>
-
-			<div class="paisagismo">	
-				<h3>RECURSOS PAISAGÍSTICOS  |<br>
-				UMAPAZ |<br> 
-				JUN 2016 | SÃO PAULO, SP</h3> 
-			</div>
-
-			<div class="jardinagem">
-				<h3>JARDINAGEM |<br>
-				UMAPAZ|<br>
-				NOV 2015 | SÃO PAULO, SP</h3> 
-			</div>
-
-			<div class="marcenaria">	
-				<h3>MARCENARIA | PROJETO E CONSTRUÇÃO 1 |<br>
-				OFICINALAB |<br>
-				MAI 2015 | SÃO PAULO, SP</h3>  
-			</div>
-
-			<div class="aqua">
-				<h3>AQUA |<br>
-				FORMAÇÃO DE AUDITORES AQUA |<br>
-				DOMINANDO O REFERENCIAL TÉCNICO AQUA |<br>
-				INTRODUÇÃO AO REFERENCIAL TÉCNICO AQUA |<br>
-				FUNDAÇÃO VANZOLINI |<br>
-				DEZ 2010 | SÃO PAULO, SP</h3>  
-			</div>
-
-			<div class="bio">
-				<h3>BIO ARQUITETURA E BIO DESIGN |<br> 
-				UNIPAZ |<br>
-				MAI 2009 | SÃO PAULO, SP</h3>
-			</div>
-
-			<div class="feng-shui">
-				<h3>FENG SHUI |<br>
-				ESCOLA ESTRELA DA FELICIDADE |<br>
-				NOV 2000 | SÃO PAULO, SP</h3> 
-			</div>
 		</section>
 	</article>
 
 <!-- início rodapé -->
-	<footer>
-		<ul>
-			<li><a href=""><i class="fab fa-facebook"></i></a></li>
-			<li><a href=""><i class="fab fa-instagram"></i></a></li>
-		  	<li><a href=""><i class="fab fa-twitter"></i></a></li>
-		  	<li><a href=""><i class="fab fa-github"></i></a></li>
-		</ul>
+	<footer class="footer-section">
+		<div class="footer">
+        	<ul>
+				<li><a href=""><i class="fab fa-facebook"></i></a></li>
+				<li><a href=""><i class="fab fa-instagram"></i></a></li>
+          		<li><a href=""><i class="fab fa-twitter"></i></a></li>
+          		<li><a href=""><i class="fab fa-github"></i></a></li>
+			</ul>
+		</div>	
 	</footer>
+
 </body>
 
 </html>
