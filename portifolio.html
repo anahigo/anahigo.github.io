@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>AH! Ana Higo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<style>
+/* sections */
+		.introducao-section{
+			background-color: rgb(66,18,45);
+			padding: 50px 0px;
+			width: 100%;
+		}
+
+		.frontend-section{
+			background-color: rgb(91, 94, 100);
+			padding: 50px 0px;
+			width: 100%;
+		}
+
+/* divs */
+		.div-projetos {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 80%;
+			margin: auto;
+		}
+
+		.div-projetos > div {
+			flex: 1 1 300px;
+			margin: 10px;
+		}
+
+		.projeto-intro{
+			background-color: rgb(255,255,255);	
+			color: rgb(66,18,45);
+			text-align: left;
+			padding: 20px;
+		}
+
+		.projeto-front-end{
+			background-color: rgb(255,255,255);	
+			color: rgb(91, 94, 100);
+			text-align: left;
+			padding: 20px;
+		}
+
+/* h e p */
+		.h2-title {
+			color: rgb(255,255,255);
+			font-size: 2rem;
+			text-align: center;
+		}
+		
+		h3 {
+			font-size: 1.25rem;
+		}
+
+		p{
+			font-size: 1.2rem;
+		}
+
+/* links */
+		p li:hover {
+  		background-color: rgb(114, 112, 112);
+		}
+
+		p a {
+  		color: rgb(66, 18, 45);
+  		text-decoration: none;
+		}
+
+		p a:hover {
+  		color: rgb(114, 112, 112);
+  		font-weight: 900;
+		}
+
+/* media query */
+		@media screen and ( max-width : 1024px ) {
+
+			.div-projetos > div {
+				flex: 1 1 500px;
+			}
+
+		}
+
+	</style>
+</head>
+
+<body>
+
+<!-- início Cabeçalho  -->	
+	<header>
+		<div class="container">
+			<div class="container-header-main">
+				<div class="logo-logo">
+					<a href="index.html"><img class="logo-logo" src="logo.png"></a>
+				</div>
+
+				<div class="text-title">
+					<h1>Ana Higo</h1>
+					<h2>Arquiteta, Empreendedora na Área de Alimentação e Estudante de Desenvolvimento de Software</h2>
+				</div>	
+				<div class="main-empty"></div>
+			</div>
+
+			<div class="container-header-menu">
+				<div class="menu-empty"></div>
+				<nav class= "menu-navegacao-site">
+					<ul>
+						<li><a href="index.html">Apresentação</a></li>
+						<li><a href="perfil.html">Mais sobre Ana</a></li>
+						<li><a href="experiencia.html">Experiências Profissionais</a></li>
+						<li><a href="formacao.html">Formação Acadêmica e Cursos</a></li>
+						<li><a href="portifolio.html">Portifólio</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="header-empty"></div>
+
+<!-- início intro -->
+	<article>
+		<section class="introducao-section">
+			<h2 class="h2-title">CURSO TRYBE - INTRODUÇÃO</h2>
+			<div class="div-projetos">
+				<div class="projeto-intro">
+						<h3>PÁGINA WEB | <br>
+							HTML e CSS - Básico | 
+						</h3>
+						<h4>Mar | 2020 |</h4>
+						<p><a href="https://anahigo.github.io/ProjetoTrybe_01_Intro/" target="_blank">Projeto</a></p>
+						<p><a href="https://github.com/anahigo/ProjetoTrybe_01_Intro" target="_blank">Código</a></p>
+					</div>
+					<div class="projeto-intro">
+						<h3>MEME GENERATOR |<br>
+							HTML, CSS e JS - DOM | 
+						</h3>
+						<h4> Abr | 2020 |</h4>
+						<p><a href="https://anahigo.github.io/ProjetoTrybe_02_Intro/" target="_blank">Projeto</a></p>
+						<p><a href="https://github.com/anahigo/ProjetoTrybe_02_Intro" target="_blank">Código</a></p>
+					</div>
+					<div class="projeto-intro">
+						<h3>PIXAL ART | <br> 
+							HTML, CSS e JS - DOM |
+						</h3>
+						<h4>Abr | 2020 |</h4>
+						<p><a href="https://anahigo.github.io/ProjetoTrybe_03_Intro/" target="_blank">Projeto </a></p>
+						<p><a href="https://github.com/anahigo/ProjetoTrybe_03_Intro" target="_blank">Código</a></p>
+					</div>
+					<div class="projeto-intro">
+						<h3>TO DO LIST |<br>
+							HTML, CSS e JS - DOM |
+						</h3>
+						<h4>Abr | 2020 |</h4>
+						<p><a href="https://anahigo.github.io/ProjetoTrybe_04_Intro" target="_blank">Projeto</a></p>
+						<p><a href="https://github.com/anahigo/ProjetoTrybe_04_Intro" target="_blank">Código</a></p>
+					</div>
+					<div class="projeto-intro">
+						<h3>COLOR GUESS |<br>
+							HTML, CSS e JS - DOM |
+						</h3>
+						<h4>Abr | 2020 |</h4>
+						<p><a href="https://anahigo.github.io/ProjetoTrybe_05_Intro/" target="_blank">Projeto</a></p>
+						<p><a href="https://github.com/anahigo/ProjetoTrybe_05_Intro" target="_blank">Código</a></p>
+					</div>
+					<div class="projeto-intro">
+						<h3>MISTERY LETTERS |<br>
+							HTML, CSS e JS - DOM |
+						</h3>
+						<h4>Abr | 2020 |</h4>
+						<p><a href="https://anahigo.github.io/ProjetoTrybe_06_Intro/" target="_blank">Projeto</a></p>
+						<p><a href="https://github.com/anahigo/ProjetoTrybe_06_Intro" target="_blank">Código</a></p>
+					</div>
+					<div class="projeto-intro">
+						<h3>OUTROS EXERCÍCIOS |<br>
+							SH, HTML, CSS e JS |
+						</h3>
+						<h4> Mar e Abr | 2020 |</h4>  
+						<p><a href="https://github.com/anahigo/SH_HTML_CSS_JS_Trybe-Introduction" target="_blank">Código</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="frontend-section">
+			<h2 class="h2-title">CURSO TRYBE - FRONT-END</h2>
+			<div class="div-projetos">
+				<div class="projeto-front-end">
+					<h3>FACEBOOK SIGNUP |<br>
+						HTML, CSS e JS - DOM |
+					</h3>
+					<h4>Abr | 2020 |</h4>
+					<p><a href="https://anahigo.github.io/ProjetoTrybe_01_Front-End/" target="_blank">Projeto</a></p>
+					<p><a href="https://github.com/anahigo/ProjetoTrybe_01_Front-End" target="_blank">Código</a></p>
+				</div>
+				<div class="projeto-front-end">
+					<h3>DAILY PROPHET |<br>
+						HTML e CSS - Responsivo e Animação |
+					</h3>
+					<h4>Abr | 2020 |</h4>
+					<p><a href="https://anahigo.github.io/ProjetoTrybe_02_Front-End/" target="_blank">Projeto</a></p>
+					<p><a href="https://github.com/anahigo/ProjetoTrybe_02_Front-End" target="_blank">Código</a></p>
+				</div>
+				<div class="projeto-front-end">
+					<h3>UNIT TESTS |<br>
+						JS |
+					</h3>
+					<h4>Maio | 2020 |</h4>
+					<p><a href="" target="_blank">Código</a></p>
+				</div>
+
+				<div class="projeto-front-end">
+						<h3>OUTROS EXERCÍCIOS |<br> 
+							HTML, CSS e JS |
+						</h3>
+						<h4> Mar e Abr | 2020 |</h4>  
+						<p><a href="https://github.com/anahigo/HTML_CSS_JS_Trybe-Front-End" target="_blank">Código</a></p>
+				</div>
+			</div>
+		</section>
+	
+<!-- início rodapé -->
+	<footer class="footer-section">
+		<div class="footer">
+      <ul>
+				<li><a href="https://www.facebook.com/ana.higo.5" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/ah_anahigo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/anahigo" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://github.com/anahigo" target="_blank"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/ana-higo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			</ul>
+		</div>	
+	</footer>
+
+</body>
+
+</html>

@@ -2,18 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
 
 /* geral */
-* {
-  box-sizing: border-box;	
+body {
+  background-color: darkgray;
   font-family: 'Baloo 2', cursive;
   margin: 0;
   padding: 0;
 }
-
-body {
-  display: grid;
-  grid-template-areas: "header" "article" "footer";
-}
-
 
 /* header logo e título */
 .container {
@@ -28,6 +22,7 @@ body {
 
 .header-empty {
   height: 240px;
+  font-family: ;
 }
 
 .container-header-main {
@@ -71,7 +66,6 @@ body {
 	background-color: rgb(91, 94, 100);
 	padding: 10px;
 	margin: 2px;
-	transition: 1s;
 	font-size: 100%;
 	font-weight: 500;
 }
@@ -96,6 +90,7 @@ body {
   align-items: center;
   background-color: rgb(66,18,45);
   display: flex;
+  /*flex-wrap: wrap; */
   justify-content: space-around;
   width: 100%;
 }
@@ -214,3 +209,14 @@ body {
 .footer a:hover {
 	color: rgb(91, 94, 100); 
 }
+
+/* media query
+@media screen and ( max-width : 1024px ) {
+
+  .imagem-ana {
+    width: 40%;
+    padding-left: 0px;
+    margin: auto;
+  }	
+  
+} */

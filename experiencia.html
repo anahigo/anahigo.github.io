@@ -4,74 +4,168 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>AH! Ana Higo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<style>
-		/* article resumo */
+/* sections */
 		.resumo-section {
-  		  	align-items: center;
-  		  	background-color: rgb(66,18,45);	
-			display: flex;
-  		  	justify-content: space-around;
+			background-color: rgb(66,18,45);
+			padding: 50px 0px;
 			width: 100%;
 		}
 
-		.resumo {
- 			background-color: rgb(255,255,255);
-  			color: rgb(66,18,45);
-			font-size: 120%;
-  			margin: 50px;
-  			padding: 20px;
-  			width: 50%;
-		}
-
-		.projetos-section {
-  		  	align-items: center;
+		.realizacoes-section {
 			background-color: rgb(91, 94, 100);
-			flex-direction: column;	
-			display: flex;
-  		  	justify-content: space-around;
+			padding: 50px 0px;
 			width: 100%;
 		}
 
-		.join-realizacoes {
- 			background-color: rgb(255,255,255);
-  			color: rgb(91, 94, 100);
-			font-size: 120%;
-  			margin: 50px;
-			padding: 20px;
-			text-align: center;  
-  			width: 80%;
+/* divs resumo e realizacoes empreendendorimo */
+		.div-empreendendorismo {
+			width: 80%;
+			margin: auto;
 		}
 
-		.projetos-realizacoes {
-			align-items: center;
-			flex-direction: column;
-			display: flex;
-		}
-
-		.ah, .cury, .mcaa, .calazans, .horta {
- 			background-color: rgb(255,255,255);
-  			color: rgb(91, 94, 100);
-			font-size: 120%;	
-			padding: 20px 70px;
-			text-align: center;  
-  			width: 80%;
-		}
-		.h3{
-			background-color: rgb(91, 94, 100);
-			color: rgb(255,255,255);
-		}
-
-		.projetos {
-			align-items: center;
-			background-color: rgb(91, 94, 100);	
-			color: rgb(255,255,255);
-			display: flex;
-  		  	justify-content: space-between;
-			width: 100%;
+		.empreendendorismo {
+			background-color: rgb(255,255,255);	
+			color: rgb(66,18,45);
 			text-align: left;
 			padding: 20px;
 		}
+
+/* divs resumo arquitetura */
+		.div-arquitetura-exp {
+			margin-top: 30px;
+		}
+
+		.div-arquitetura {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 80%;
+			margin: auto;
+		}
+
+		.div-arquitetura > div {
+			flex: 1 1 400px;
+			margin: 10px;
+		}
+
+		.arquitetura {
+			background-color: rgb(255,255,255);	
+			color: rgb(66,18,45);
+			text-align: left;
+			padding: 20px;
+		}		
+
+/* divs resumo realizacoes */
+		.arquitetura-realizacoes-projeto {
+			margin-top: 30px;
+		}
+		
+		.div-projetos-realizacoes {
+			margin-top: 50px;
+		}
+
+		.div-realizacoes {
+			background-color: rgb(255,255,255);	
+			color: rgb(91, 94, 100);
+			margin: auto;
+			max-width: 80%;
+			padding: 20px;
+			text-align: left;
+		}
+
+		.div-projetos-principal {
+			margin-top: 30px;
+		}
+
+		.div-projetos {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 80%;
+			margin: auto;
+		}
+
+		.div-projetos > div {
+			flex: 1 1 300px;
+			margin: 10px;
+		}
+
+		.projetos {
+			border: 1px solid rgb(255,255,255);	
+			color: rgb(255,255,255);
+			text-align: left;
+			padding: 20px;
+		}
+
+/* h e p */
+		.h2-title{
+			color: rgb(255,255,255);
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.h2-subtitle {
+			color: rgb(255,255,255);
+			font-size: 1.5rem;
+			text-align: center;
+		}
+				
+		.h3-title-rea{
+			font-size: 1.25rem;
+			text-align: center;
+		}
+		
+		.h3-title-pro{
+			color: rgb(255,255,255);
+			font-size: 1.25rem;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+		}
+		
+		h4 {
+			font-size: 1.15rem;
+		}
+		
+		h5 {
+			font-size: 1.1rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
+
+/* links */
+		h3 li:hover {
+  		background-color: rgb(114, 112, 112);
+		}
+
+		h3 a {
+  		color: rgb(66, 18, 45);
+  		text-decoration: none;
+		}
+
+		h3 a:hover {
+  		color: rgb(114, 112, 112);
+			font-weight: 900;
+			color: rgb(114, 11, 112);
+		}
+
+/* media query */
+		@media screen and ( max-width : 1024px ) {
+
+			.div-arquitetura > div {
+				flex: 1 1 500px;
+			}
+
+			.div-projetos > div  {
+				flex: 1 1 500px;
+			}
+		}
+
 	</style>
 </head>
 
@@ -99,6 +193,7 @@
 						<li><a href="perfil.html">Mais sobre Ana</a></li>
 						<li><a href="experiencia.html">Experiências Profissionais</a></li>
 						<li><a href="formacao.html">Formação Acadêmica e Cursos</a></li>
+						<li><a href="portifolio.html">Portifólio</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -106,276 +201,332 @@
 	</header>
 	<div class="header-empty"></div>
 
-<!-- início Perfil -->
+<!-- início experiencia-->
 	<article>
-		<section id='resumo-section' class="resumo-section">
-			<div id='resumo' class="resumo">
-				<div class="join">
-					<h2>EMPREENDENDORISMO</a></h2><br>
-					<h3>JOIN CAFETERIA | SÓCIA PROPRIETÁRIA</h3>
-					<h4>AGO 2017 | SÃO PAULO, SP</h4>
-					<p>Administração (Financeiro e Compras), RH (Contratação e Treinamento), Atendimento, Cardápio (Definição e Ficha Técnica), Preparação dos Alimentos.</p><br>
-				</div>
-			
-				<div class="ah-resumo">
-					<h2>ARQUITETURA</h2><br>
-					<h3>AH! ARQUITETURA | DIRETORA</h3>
-					<h4>JAN 2015 | SÃO PAULO, SP</h4>
-					<p>Levantamento, Estudo Preliminar, Anteprojeto; Projeto Executivo e Acompanhamento de Obras de Arquitetura e Interiores, Residenciais e Comerciais de Médio Padrão. Parceria com Escritórios de Arquitetura.</p><br>
-				</div>
-
-				<div class="cury-resumo">
-					<h3>CURY CONSTRUTORA | SUPERVISORA II</h3>
-					<h4>FEV 2014 – JAN 2015 | SÃO PAULO, SP</h4>
-					<p>Projeto Pré-Executivo, Executivo de Arquitetura e Liberação para Obra de Edifícios Residenciais de Médio/Baixo Padrão.</p>
-				</div>
-			</div>
-			<div id='resumo' class="resumo">
-				<div class="maithia-resumo">
- 					<h3>MAITHIÁ GUEDES | ARQUITETA</h3>
-					<h4>SET 2013 – JAN 2014 | SÃO PAULO, SP</h4>
-					<p>Levantamento; Estudo Preliminar; Projeto Executivo e Acompanhamento de Obras de Arquitetura e Interiores para Obras Residenciais de Alto/Médio Padrão.</p><br>
-				</div>
-			
-				<div class="mcaa-resumo">
-					<h3>MCAA ARQUITETOS | ARQUITETA</h3>
-					<h4>NOV 2011 – MAI 2013 | SÃO PAULO, SP</h4>
-					<p>Projeto Pré-Executivo e Executivo de Arquitetura e Liberação para Obra de Edifícios Residenciais e Comerciais de Alto/Médio Padrão.</p><br>
-				</div>
-
-				<div class="calazans-resumo">
-					<h3>GUSTAVO CALAZANS | ARQUITETA E ESTAGIÁRIA</h3>
-					<h4>AGO 2008 – NOV 2011 | SÃO PAULO, SP</h4>
-					<p>Levantamento; Estudo Preliminar; Anteprojeto e Projeto Executivo de Arquitetura e Interiores, Residencial Alto/Médio Padrão. Mostras e Eventos: BGourmet Casa Cor São Paulo 2011; Lounge Quem Inverno 2009. Colaboração na Produção de Ambiente para Editorial – Revista/Jornal Leroy Merlin.</p><br>
-				</div>
-
-				<div class="horta-resumo">
-					<h3>HORTA & STOCK | ESTAGIÁRIA</h3>
-					<h4>DEZ 2006 – MAR 2008 | SÃO PAULO, SP</h4>
-					<p>Projeto Executivo de Arquitetura e Interiores, Residencial de Alto Padrão</p>
-				</div>
-			</div>
-		</section>
-
-<!-- início experiência -->
-		<section id="projetos-section" class="projetos-section">
-			<div id="join" class="join-realizacoes">
-				<h3>JOIN CAFETERIA | Principais Realizações</h3>
-				<p>
-
-				</p>
-			</div>	
-
-			<div id="ah" class="projetos-realizacoes">
-				<div class="ah">
-					<h3>AH ARQUITETURA | Principais Realizações</h3>
-					<p>O atendimento direto ao cliente, considerando todas as suas limitações, sejam de preferências ou budget, possibilitou uma visão mais ampla e completa sobre o exercício da profissão, expandiu a visão administrativa e do negócio em si, importantes para o desenvolvimento de competências de gestão e liderança.</p><br>
-					<p>As principais realizações como arquiteta independente foram: aperfeiçoamento do brieffing com o cliente; criação de projetos dentro do budget proposto; atendimento da expectativa do cliente; gestão do projeto; controle de custos; gerenciamento de obras e dos profissionais envolvidos; gestão de equipes e de conflitos; administração do tempo; resolução imediata de problemas.</p>
-				</div>
-
-				<div class="ah">
-					<h3 class="h3">AH ARQUITETURA | Principais Projetos</h3>
-					<div class="projetos">
-						<div class="ah-01">
-							<h4>ESCRITÓRIO | COWORKING<br>
-							ARQUITETURA DE INTERIORES<br>
-							JAN 2016 | SÃO PAULO, SP</h4>
-							<p>Projeto e Desenvolvimento do Estudo Preliminar.</p><br>
-
-							<h4>RESIDENCIAL | BIRAI<br>
-							ARQUITETURA DE INTERIORES<br>
-							AGO 2015| SÃO PAULO, SP</h4>
-							<p>Levantamento; Projeto e Desenvolvimento do Estudo Preliminar,<br> Anteprojeto, Projeto Executivo; e, Gerenciamento da Obra Civil.</p>
-						</div>
-
-						<div class="ah-02">
-							<h4>RESTAURANTE | LE RIZ<br>
-							ARQUITETURA DE INTERIORES<br>
-							ABR 2012 | CABREÚVA, SP</h4>
-							<p>Projeto e Desenvolvimento do Estudo Preliminar.</p><br>
-
-							<h4>RESIDENCIAL | FRANCHON<br>
-							ARQUITETURA DE INTERIORES<br>
-							JUN 2011 | SÃO PAULO, SP</h4>
-							<p>Levantamento; Projeto e Desenvolvimento do Estudo Preliminar,<br> Anteprojeto, Projeto Executivo; e, Acompanhamento da Obra Civil</p>
-						</div>
-					</div>	
-				</div>
-			</div>
-
-			<div id="cury" class="projetos-realizacoes">
-				<div class="cury">
-					<h3>CURY CONSTRUTORA | Principais Realizações</h3>
-					<p>O grande salto profissional ao entrar na Cury foi sair da Edificação na empresa anterior, para a Implantação dos Projetos, o que expandiu e aprofundou meu nível de conhecimento.</p><br>
-					<p>Entre as principais realizações na construtora estão a locação do projeto e compatibilização com a topografia; a solicitação e acompanhamento das RT’s dos projetistas; solicitação e acompanhamento das concessionárias; projetos e desenvolvimento do paisagismo; projetos e desenvolvimento da comunicação interna das edificações e a condução da reunião com projetistas.</p>
-				</div>
-
-				<div class="cury">
-					<h3 class="h3">CURY CONSTRUTORA | Principais Projetos</h3>
-					<div class="projetos">
-						<div class="cury-01">
-							<h4>RESIDENCIAL | ED. RITMO CLUBE<br>
-							ARQUITETURA DE EDIFICAÇÃO E IMPLANTAÇÃO<br>
-							SET 2014 | SÃO PAULO, SP</h4>
-							<p>Desenvolvimento do Pré-Executivo e Executivo; e, Compatibilização <br> com Projetos Complementares.</p><br>
-						</div>
-
-						<div class="cury-02">	
-							<h4>RESIDENCIAL | ED. DEZ PRAIA GRANDE<br>
-							ARQUITETURA DE EDIFICAÇÃO E IMPLANTAÇÃO<br>
-							MAI 2014 | PRAIA GRANDE, SP</h4>
-							<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para <br>Obra;  Compatibilização com Projetos Complementares.</p>
-						</div>
-					</div>	
-				</div>
-			</div>
-
-			<div id="mcaa" class="projetos-realizacoes">
-				<div class="mcaa">
-					<h3>MCAA | Principais Realizações</h3>
-					<p>Da experiência limitada a reformas e decoração em unidades, no escritório anterior, para edificações em projetos de arquitetura de alto padrão: essa foi a motivação para buscar uma posição em um grande escritório como o MCAA.</p><br>
-					<p>As principais realizações como Arquiteta de Desenvolvimento foram: análise crítica do projeto; verificação do atendimento às normas e legislações; aprovação do projeto; compatibilização de estrutura, hidráulica, elétrica, ar condicionado, paisagismo - em escala maior - em edificações com mais de 10 andares; estudo de detalhes de arquitetura, serralheria, alumínio, madeira, caixilho e de todos os componentes abrangidos em uma edificação; providenciar respostas às construtoras; utilizar sites para gerenciamento de projetos.</p>
-				</div>
-
-				<div class="mcaa">
-					<h3 class="h3">MCAA | Principais Projetos</h3>
-					<div class="projetos">
-						<div class="mcaa-01">		
-							<h4>RESIDENCIAL | ED. ESSENCIALLE HOME CLUB | CEGG<br>
-							ARQUITETURA DE EDIFICAÇÃO<br>
-							JAN 2013 | BARUERI, SP</h4>
-							<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para <br> Obra; Compatibilização com Projetos Complementares</p><br>
-
-							<h4>COMERCIAL | ED. GRAND STATION | SINCO<br>
-							ARQUITETURA DE EDIFICAÇÃO<br>
-							JUN 2012 | SÃO PAULO, SP</h4>
-							<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para <br> Obra; Compatibilização com Projetos Complementares.</p>
-						</div>
-
-						<div class="mcaa-02">
-							<h4>RESIDENCIAL | ED. VOLTAIRE CHÁCARA KLABIN |  QUEIROZ <br>  GALVÃO<br>
-							ARQUITETURA DE EDIFICAÇÃO<br>
-							JAN 2012 | SÃO PAULO, SP</h4>
-							<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para <br> Obra; Compatibilização com Projetos Complementares.</p><br>
-
-							<h4>RESIDENCIAL | ED. VOLTAIRE CHÁCARA KLABIN| QUEIROZ <br> GALVÃO<br>
-							ARQUITETURA DE EDIFICAÇÃO<br>
-							JAN 2012 | SÃO PAULO, SP</h4>
-							<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para <br> Obra; Compatibilização com Projetos Complementares.</p>
-						</div>
-					</div>	
-				</div>
-			</div>
-
-			<div id="calazans" class="projetos-realizacoes">
-				<div class="calazans">
-					<h3>GUSTAVO CALAZANS | Principais Realizações</h3>
-					<p>Responder direto a um arquiteto renomado, sem a intermediação de um coordenador, não apenas como aprendiz, mas como profissional, foi o início da carreira e a concretização da teoria aprendida, trabalhando em projetos de arquitetura de interiores residenciais e mostras.</p><br>
-					<p>Principais realizações: participação em reuniões com clientes; levantamento; estudo preliminar; anteprojeto e projeto executivo de arquitetura e interiores residencial alto/médio padrão; mostras e eventos (BGourmet Casa Cor São Paulo 2011; Lounge Quem Inverno 2009); colaboração na produção de ambientes para editorial – Revista/Jornal Leroy Merlin.esponder direto a um arquiteto renomado, sem a intermediação de um coordenador, não apenas como aprendiz, mas como profissional, foi o início da carreira e a concretização da teoria aprendida, trabalhando em projetos de arquitetura de interiores residenciais e mostras.</p>
-				</div>
-
-				<div class="calazans">
-					<h3 class="h3">GUSTAVO CALAZANS | Principais Projetos</h3>
-					<div class="projetos">
-						<div class="calazans-01">	
-							<h4>RESIDENCIAL | CHIODETTO<br>
-							ARQUITETURA DE INTERIORES<br>
-							SET 2011 | SÃO PAULO, SP</h4>
-							<p>Levantamento; e, Desenvolvimento do Estudo Preliminar,<br> Anteprojeto e Executivo.</p><br>
-
-							<h4>RESIDENCIAL | CYMBALISTA<br>
-							ARQUITETURA DE INTERIORES<br>
-							MAI 2011 | SÃO PAULO, SP</h4>	
-							<p>Levantamento; e, Desenvolvimento do Estudo Preliminar, <br>Anteprojeto e Executivo.</p><br>
-
-							<h4>MOSTRA | CASA COR SP | BGOURMET<br>
-							CENOGRAFIA<br>
-							ABR 2011 | SÃO PAULO, SP</h4>
-							<p>Desenvolvimento do Estudo Preliminar, Anteprojeto e <br>Projeto Executivo; e, Acompanhamento da Obra e Produção.</p><br>
-
-							<h4>RESIDENCIAL | ARAÚJO E RAIBIN <br>
-							ARQUITETURA DE INTERIORES<br>
-							NOV 2010 | SÃO PAULO, SP</h4>
-							<p>Desenvolvimento do Estudo Preliminar, Anteprojeto e <br>Projeto Executivo.</p><br>
-
-							<h4>RESIDENCIAL | PITT<br>
-							ARQUITETURA DE INTERIORES<br>
-							JUN 2010 | SÃO PAULO, SP</h4>
-							<p>Levantamento; e, Desenvolvimento do Estudo 	Preliminar, <br>Anteprojeto e Executivo.</p><br>
-
-							<h4>RESIDENCIAL | BRANCO<br>
-							ARQUITETURA DE INTERIORES<br>
-							MAI 2010 | SÃO PAULO, SP</h4>
-							<p>Levantamento; e, Desenvolvimento do Estudo Preliminar, <br>Anteprojeto e Executivo.</p><br>
-						</div>
-
-						<div class="calazans-02">
-							<h4>COMERCIAL | ESTAÇÃO SÃO PAULO<br>
-							ARQUITETURA DE INTERIORES<br>
-							AGO 2009 | SÃO PAULO, SP</h4>
-							<p>Levantamento; e, Desenvolvimento do Estudo Preliminar,<br> Anteprojeto e Executivo.</p><br>
-
-							<h4>EVENTO | LOUNGE REVISTA QUEM<br>
-							CENOGRAFIA<br>
-							MAI 2009 | CAMPOS DO JORDÃO, SP</h4>
-							<p>Desenvolvimento do Estudo Preliminar, Anteprojeto e <br>Executivo.</p><br>
-
-							<h4>RESIDENCIAL | LANRANSCHI E BLUN<br>
-							ARQUITETURA DE INTERIORES<br>
-							JAN 2009 | SÃO PAULO, SP</h4>
-							<p>Levantamento; e, Desenvolvimento do Estudo Preliminar,<br> Anteprojeto e Executivo</p><br>
-
-							<h4>RESIDENCIAL | COMAS<br>
-							ARQUITETURA DE INTERIORES<br>
-							OUT 2008 | GUARUJÁ, SP</h4>
-							<p>Levantamento; e, Desenvolvimento do Estudo Preliminar, <br>Anteprojeto e Executivo.</p><br>
-
-							<h4>MOSTRA | VILLA AMBIENTAL | MAFRE SEG.<br>
-							CENOGRAFIA<br>
-							SET 2008 | SÃO PAULO, SP </h4>
-							<p>Levantamento; e, Desenvolvimento do Anteprojeto e <br>Executivo.</p><br>
-
-							<h4>RESIDENCIAL | EID<br>
-							ARQUITETURA DE EDIFICAÇÃO<br>
-							AGO 2008 | BALEIA, SP</h4>
-							<p>Desenvolvimento do Pré-Executivo e Executivo; e, <br>Compatibilização com Projetos Complementares.</p><br>
-						</div>	
+		<section class="resumo-section">
+			<h2 class="h2-title">EXPERIÊNCIAS PROFISSIONAIS</h2>
+			<div class="div-empreendendorismo-exp">
+				<h2 class="h2-subtitle">EMPREENDENDORISMO</a></h2>
+				<div class="div-empreendendorismo">
+					<div class="empreendendorismo">
+						<h3><a href="#join">JOIN CAFETERIA</a> | SÓCIA PROPRIETÁRIA</h3>
+						<h4>AGO 2017 | SÃO PAULO, SP</h4>
+						<p>Administração (Financeiro e Compras), RH (Contratação e Treinamento), Atendimento, Cardápio (Definição e Ficha Técnica), Preparação dos Alimentos.</p>
 					</div>
 				</div>
 			</div>
 
-			<div id="horta" class="projetos-realizacoes">
-				<div class="horta">
-					<h3>HORTA & STOCK| Principais Realizações</h3>
-					<p>A primeira experiência como estagiária-arquiteta foi o começo do aprendizado e do desenvolvimento profissional dentro da carreira escolhida, ao transformar a teoria em prática.</p>
-					<p>Respondendo a um coordenador, as principais realizações foram: executar plantas de layout, arquitetura e elétrica; fazer o dossiê de decoração; ampliação de área molhada; detalhes de arquitetura, marcenaria e serralheria</p>
+			<div class="div-arquitetura-exp">
+				<h2 class="h2-subtitle">ARQUITETURA</a></h2>
+				<div class="div-arquitetura">			
+					<div class="arquitetura">
+						<h3><a href="#ah">AH! ARQUITETURA</a> | DIRETORA</h3>
+						<h4>JAN 2015 | SÃO PAULO, SP</h4>
+						<p>Levantamento, Estudo Preliminar, Anteprojeto; Projeto Executivo e Acompanhamento de Obras de Arquitetura e Interiores, Residenciais e Comerciais de Médio Padrão. Parceria com Escritórios de Arquitetura.</p>
+					</div>
+
+					<div class="arquitetura">
+						<h3><a href="#cury">CURY CONSTRUTORA</a> | SUPERVISORA II</h3>
+						<h4>FEV 2014 – JAN 2015 | SÃO PAULO, SP</h4>
+						<p>Projeto Pré-Executivo, Executivo de Arquitetura e Liberação para Obra de Edifícios Residenciais de Médio/Baixo Padrão.</p>
+					</div>
+
+					<div class="arquitetura">
+ 						<h3><a href="#maithia">MAITHIÁ GUEDES</a> | ARQUITETA</h3>
+						<h4>SET 2013 – JAN 2014 | SÃO PAULO, SP</h4>
+						<p>Levantamento; Estudo Preliminar; Projeto Executivo e Acompanhamento de Obras de Arquitetura e Interiores para Obras Residenciais de Alto/Médio Padrão.</p>
+					</div>
+			
+					<div class="arquitetura">
+						<h3><a href="#mcaa">MCAA ARQUITETOS</a> | ARQUITETA</h3>
+						<h4>NOV 2011 – MAI 2013 | SÃO PAULO, SP</h4>
+						<p>Projeto Pré-Executivo e Executivo de Arquitetura e Liberação para Obra de Edifícios Residenciais e Comerciais de Alto/Médio Padrão.</p>
+					</div>
+
+					<div class="arquitetura">
+						<h3><a href="#gustavo">GUSTAVO CALAZANS</a> | ARQUITETA E ESTAGIÁRIA</h3>
+						<h4>AGO 2008 – NOV 2011 | SÃO PAULO, SP</h4>
+						<p>Levantamento; Estudo Preliminar; Anteprojeto e Projeto Executivo de Arquitetura e Interiores, Residencial Alto/Médio Padrão. Mostras e Eventos: BGourmet Casa Cor São Paulo 2011; Lounge Quem Inverno 2009. Colaboração na Produção de Ambiente para Editorial – Revista/Jornal Leroy Merlin.</p><br>
+					</div>
+	
+					<div class="arquitetura">
+						<h3><a href="#horta">HORTA & STOCK</a> | ESTAGIÁRIA</h3>
+						<h4>DEZ 2006 – MAR 2008 | SÃO PAULO, SP</h4>
+						<p>Projeto Executivo de Arquitetura e Interiores, Residencial de Alto Padrão</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- início realizações-->
+		<section class="realizacoes-section">
+			<h2 class="h2-title">REALIZAÇÕES E PROJETOS</h2>
+			<div class="empreendendorismo-realizacoes-projeto">
+				<h2 class="h2-subtitle">EMPREENDENDORISMO</a></h2>
+				<div class="div-projetos-realizacoes">
+					<div id="join" class="div-realizacoes">
+						<h3 class="h3-title-rea">JOIN CAFETERIA | Principais Realizações |</h3>
+						<p>
+
+						</p>
+					</div>	
+				</div>
+			</div>
+		
+			<div class="arquitetura-realizacoes-projeto">
+				<h2 class="h2-subtitle">ARQUITETURA</a></h2>
+				<div id="ah"class="div-projetos-realizacoes">
+					<div class="div-realizacoes">
+						<h3 class="h3-title-rea">AH ARQUITETURA | Principais Realizações |</h3>
+						<p>O atendimento direto ao cliente, considerando todas as suas limitações, sejam de preferências ou budget, possibilitou uma visão mais ampla e completa sobre o exercício da profissão, expandiu a visão administrativa e do negócio em si, importantes para o desenvolvimento de competências de gestão e liderança.<br><br>
+						As principais realizações como arquiteta independente foram: aperfeiçoamento do brieffing com o cliente; criação de projetos dentro do budget proposto; atendimento da expectativa do cliente; gestão do projeto; controle de custos; gerenciamento de obras e dos profissionais envolvidos; gestão de equipes e de conflitos; administração do tempo; resolução imediata de problemas.</p>
+					</div>
+
+					<div class="div-projetos-principal">
+						<h3 class="h3-title-pro">AH ARQUITETURA | Principais Projetos |</h3>
+						<div class="div-projetos">
+							<div class="projetos">
+								<h4>ESCRITÓRIO | COWORKING |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>JAN 2016 | SÃO PAULO, SP |</h5>
+								<p>Projeto e Desenvolvimento do Estudo Preliminar.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESIDENCIAL | BIRAI |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>AGO 2015| SÃO PAULO, SP |</h5>
+								<p>Levantamento; Projeto e Desenvolvimento do Estudo Preliminar,Anteprojeto, Projeto Executivo; e, Gerenciamento da Obra Civil.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESTAURANTE | LE RIZ |<br>
+									ARQUITETURA DE INTERIORES |<br>
+								</h4>
+								<h5>ABR 2012 | CABREÚVA, SP |</h5>
+								<p>Projeto e Desenvolvimento do Estudo Preliminar.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESIDENCIAL | FRANCHON |<br>
+								ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>JUN 2011 | SÃO PAULO, SP |</h4>
+								<p>Levantamento; Projeto e Desenvolvimento do Estudo Preliminar, Anteprojeto, Projeto Executivo; e, Acompanhamento da Obra Civil</p>
+							</div>
+						</div>	
+					</div>
 				</div>
 
-				<div class="horta">
-					<h3 class="h3">HORTA & STOCK | Principais Projetos</h3>
-					<div class="projetos">
-						<div class="horta-01">	
-							<h4>CENTRO DE CONVIVÊNCIA | DOW BRASIL<br>
-							ARQUITETURA DE EDIFICAÇÃO<br>
-							AGO 2007 | GUARUJÁ, SP</h4>
-							<p>Colaboração com Desenvolvimento do Anteprojeto e Executivo.</p><br>
+				<div id="cury" class="div-projetos-realizacoes">
+					<div class="div-realizacoes">
+						<h3 class="h3-title-rea">CURY CONSTRUTORA | Principais Realizações |</h3>
+						<p>O grande salto profissional ao entrar na Cury foi sair da Edificação na empresa anterior, para a Implantação dos Projetos, o que expandiu e aprofundou meu nível de conhecimento.<br><br>
+						Entre as principais realizações na construtora estão a locação do projeto e compatibilização com a topografia; a solicitação e acompanhamento das RT’s dos projetistas; solicitação e acompanhamento das concessionárias; projetos e desenvolvimento do paisagismo; projetos e desenvolvimento da comunicação interna das edificações e a condução da reunião com projetistas.</p>
+					</div>
 
-							<h4>RESIDÊNCIA | ZATERCA E GOTILIB<br>
-							ARQUITETURA DE INTERIORES<br>
-							MAI 2007 | JUQUEHY, SP</h4>
-							<p>Colaboração com Desenvolvimento do Anteprojeto e Executivo.</p>
+					<div class="div-projetos-principal">
+						<h3 class="h3-title-pro">CURY CONSTRUTORA | Principais Projetos |</h3>
+						<div class="div-projetos">
+							<div class="projetos">
+								<h4>RESIDENCIAL | ED. RITMO CLUBE |<br>
+									ARQUITETURA DE EDIFICAÇÃO E IMPLANTAÇÃO |
+							</h4>
+							<h5>SET 2014 | SÃO PAULO, SP |</h5>
+								<p>Desenvolvimento do Pré-Executivo e Executivo; e, Compatibilização com Projetos Complementares.</p>
+							</div>
+
+							<div class="projetos">	
+								<h4>RESIDENCIAL | ED. DEZ PRAIA GRANDE |<br>
+									ARQUITETURA DE EDIFICAÇÃO E IMPLANTAÇÃO |
+								</h4>
+								<h5>MAI 2014 | PRAIA GRANDE, SP |</h5>
+								<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para Obra; Compatibilização com Projetos Complementares.</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div id="mcaa" class="div-projetos-realizacoes">
+					<div class="div-realizacoes">
+						<h3 class="h3-title-rea">MCAA | Principais Realizações |</h3>
+						<p>Da experiência limitada a reformas e decoração em unidades, no escritório anterior, para edificações em projetos de arquitetura de alto padrão: essa foi a motivação para buscar uma posição em um grande escritório como o MCAA.<br><br>
+						As principais realizações como Arquiteta de Desenvolvimento foram: análise crítica do projeto; verificação do atendimento às normas e legislações; aprovação do projeto; compatibilização de estrutura, hidráulica, elétrica, ar condicionado, paisagismo - em escala maior - em edificações com mais de 10 andares; estudo de detalhes de arquitetura, serralheria, alumínio, madeira, caixilho e de todos os componentes abrangidos em uma edificação; providenciar respostas às construtoras; utilizar sites para gerenciamento de projetos.</p>
+					</div>
+
+					<div class="div-projetos-principal">
+						<h3 class="h3-title-pro">MCAA | Principais Projetos |</h3>
+						<div class="div-projetos">
+							<div class="projetos">		
+								<h4>RESIDENCIAL | ED. ESSENCIALLE HOME CLUB | CEGG |<br>
+									ARQUITETURA DE EDIFICAÇÃO |<br>
+								JAN 2013 | BARUERI, SP |</h4>
+								<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para Obra; Compatibilização com Projetos Complementares</p>
+							</div>
+
+							<div class="projetos">
+								<h4>COMERCIAL | ED. GRAND STATION | SINCO |<br>
+									ARQUITETURA DE EDIFICAÇÃO |
+								</h4>
+								<h5>JUN 2012 | SÃO PAULO, SP |</h5>
+								<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para Obra; Compatibilização com Projetos Complementares.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESIDENCIAL | ED. VOLTAIRE CHÁCARA KLABIN |  QUEIROZ   GALVÃO |<br>
+							  	ARQUITETURA DE EDIFICAÇÃO |
+								</h4>
+								<h5>JAN 2012 | SÃO PAULO, SP |</h5>
+								<p>Desenvolvimento do Pré-Executivo, Executivo e Liberação para Obra; Compatibilização com Projetos Complementares.</p>
+							</div>
 						</div>
+					</div>	
+				</div>
 
-						<div class="horta-02">
-							<h4>RESIDÊNCIA | NAHAS<br>
-							ARQUITETURA DE INTERIORES<br>
-							FEV 2007 | SÃO PAULO, SP</h4>
-							<p>Colaboração com Desenvolvimento do Anteprojeto e Executivo.</p><br>
+				<div id="calazans" class="div-projetos-realizacoes">
+					<div class="div-realizacoes">
+						<h3 class="h3-title-rea">GUSTAVO CALAZANS | Principais Realizações |</h3>
+						<p>Responder direto a um arquiteto renomado, sem a intermediação de um coordenador, não apenas como aprendiz, mas como profissional, foi o início da carreira e a concretização da teoria aprendida, trabalhando em projetos de arquitetura de interiores residenciais e mostras.<br><br>
+						Principais realizações: participação em reuniões com clientes; levantamento; estudo preliminar; anteprojeto e projeto executivo de arquitetura e interiores residencial alto/médio padrão; mostras e eventos (BGourmet Casa Cor São Paulo 2011; Lounge Quem Inverno 2009); colaboração na produção de ambientes para editorial – Revista/Jornal Leroy Merlin.esponder direto a um arquiteto renomado, sem a intermediação de um coordenador, não apenas como aprendiz, mas como profissional, foi o início da carreira e a concretização da teoria aprendida, trabalhando em projetos de arquitetura de interiores residenciais e mostras.</p>
+					</div>
 
-							<h4>RESIDÊNCIA | NAHAS<br>
-								ARQUITETURA DE INTERIORES<br>
-								FEV 2007 | SÃO PAULO, SP</h4>
+					<div class="div-projetos-principal">
+						<h3 class="h3-title-pro">GUSTAVO CALAZANS | Principais Projetos |</h3>
+						<div class="div-projetos">
+							<div class="projetos">	
+								<h4>RESIDENCIAL | CHIODETTO |<br>
+									ARQUITETURA DE INTERIORES |
+							</h4>
+							<h5>SET 2011 | SÃO PAULO, SP |</h5>
+								<p>Levantamento; e, Desenvolvimento do Estudo Preliminar Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">	
+								<h4>RESIDENCIAL | CYMBALISTA |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>MAI 2011 | SÃO PAULO, SP</h5>	
+								<p>Levantamento; e, Desenvolvimento do Estudo Preliminar Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>MOSTRA | CASA COR SP | BGOURMET |<br>
+									CENOGRAFIA |
+								</h4>
+								<h5>ABR 2011 | SÃO PAULO, SP |</h5>
+								<p>Desenvolvimento do Estudo Preliminar, Anteprojeto e Projeto Executivo; e, Acompanhamento da Obra e Produção.</p>
+							</div>
+
+							<div class="projetos">	
+								<h4>RESIDENCIAL | ARAÚJO E RAIBIN |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>NOV 2010 | SÃO PAULO, SP |</h5>
+								<p>Desenvolvimento do Estudo Preliminar, Anteprojeto e Projeto Executivo.</p>
+							</div>
+
+							<div class="projetos">	
+								<h4>RESIDENCIAL | PITT |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>JUN 2010 | SÃO PAULO, SP |</h5>
+								<p>Levantamento; e, Desenvolvimento do Estudo 	Preliminar, Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">	
+								<h4>RESIDENCIAL | BRANCO |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>MAI 2010 | SÃO PAULO, SP |</h5>
+								<p>Levantamento; e, Desenvolvimento do Estudo Preliminar Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>COMERCIAL | ESTAÇÃO SÃO PAULO |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>AGO 2009 | SÃO PAULO, SP |</h5>
+								<p>Levantamento; e, Desenvolvimento do Estudo Preliminar, Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>EVENTO | LOUNGE REVISTA QUEM |<br>
+									CENOGRAFIA |
+								</h4>
+								<h5>MAI 2009 | CAMPOS DO JORDÃO, SP |</h5>
+								<p>Desenvolvimento do Estudo Preliminar, Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESIDENCIAL | LANRANSCHI E BLUN |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>JAN 2009 | SÃO PAULO, SP |</h5>
+								<p>Levantamento; e, Desenvolvimento do Estudo Preliminar, Anteprojeto e Executivo</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESIDENCIAL | COMAS |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>OUT 2008 | GUARUJÁ, SP |</h5>
+								<p>Levantamento; e, Desenvolvimento do Estudo Preliminar, Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>MOSTRA | VILLA AMBIENTAL | MAFRE SEG.<br>
+									CENOGRAFIA |
+								</h4>
+								<h5>SET 2008 | SÃO PAULO, SP | </h5>
+								<p>Levantamento; e, Desenvolvimento do Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESIDENCIAL | EID |<br>
+									ARQUITETURA DE EDIFICAÇÃO |
+								</h4>
+								<h5>AGO 2008 | BALEIA, SP |</h5>
+								<p>Desenvolvimento do Pré-Executivo e Executivo; e, Compatibilização com Projetos Complementares.</p>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div id="horta" class="div-projetos-realizacoes">
+					<div class="div-realizacoes">
+						<h3 class="h3-title-rea">HORTA & STOCK| Principais Realizações |</h3>
+						<p>A primeira experiência como estagiária-arquiteta foi o começo do aprendizado e do desenvolvimento profissional dentro da carreira escolhida, ao transformar a teoria em prática.<br><br>
+						Respondendo a um coordenador, as principais realizações foram: executar plantas de layout, arquitetura e elétrica; fazer o dossiê de decoração; ampliação de área molhada; detalhes de arquitetura, marcenaria e serralheria</p>
+					</div>
+
+					<div class="div-projetos-principal">>
+						<h3 class="h3-title-pro">HORTA & STOCK | Principais Projetos |</h3>
+						<div class="div-projetos">
+							<div class="projetos">	
+								<h4>CENTRO DE CONVIVÊNCIA | DOW BRASIL |<br>
+									ARQUITETURA DE EDIFICAÇÃO |
+								</h4>
+								<h5>AGO 2007 | GUARUJÁ, SP |</h5>
 								<p>Colaboração com Desenvolvimento do Anteprojeto e Executivo.</p>
+							</div>
+							
+							<div class="projetos">	
+								<h4>RESIDÊNCIA | ZATERCA E GOTILIB |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>MAI 2007 | JUQUEHY, SP | </h5>
+								<p>Colaboração com Desenvolvimento do Anteprojeto e Executivo.</p>
+							</div>
+
+							<div class="projetos">
+								<h4>RESIDÊNCIA | NAHAS |<br>
+									ARQUITETURA DE INTERIORES |
+								</h4>
+								<h5>FEV 2007 | SÃO PAULO, SP |</h5>
+								<p>Colaboração com Desenvolvimento do Anteprojeto e Executivo.</p>
+							</div>
 						</div>		
 					</div>
 				</div>
@@ -386,11 +537,12 @@
 <!-- início rodapé -->
 	<footer class="footer-section">
 		<div class="footer">
-			<ul>
-				<li><a href=""><i class="fab fa-facebook"></i></a></li>
-				<li><a href=""><i class="fab fa-instagram"></i></a></li>
-				<li><a href=""><i class="fab fa-twitter"></i></a></li>
-				<li><a href=""><i class="fab fa-github"></i></a></li>
+      <ul>
+				<li><a href="https://www.facebook.com/ana.higo.5" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/ah_anahigo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/anahigo" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://github.com/anahigo" target="_blank"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/ana-higo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 			</ul>
 		</div>	
 	</footer>

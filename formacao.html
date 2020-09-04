@@ -6,74 +6,148 @@
 	<title>AH! Ana Higo</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<style>
+
+/* sections */
+		.academica-section{
+			background-color: rgb(66,18,45);
+			padding: 50px 0px;
+			width: 100%;
+		}
+
+		.outros-section{
+			background-color: rgb(91, 94, 100);
+			padding: 50px 0px;
+			width: 100%;
+		}
+
+/* divs acadêmica */
+		.div-academica {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 80%;
+			margin: auto;
+		}
+
+		.div-academica > div {
+			flex: 1 1 200px;
+			margin: 10px;
+		}
+
+		.academica {
+			background-color: rgb(255,255,255);	
+			color: rgb(66,18,45);
+			text-align: left;
+			padding: 20px;
+		}
+
+/* divs acadêmica */
+		.div-computacao {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 80%;
+			margin: auto;
+		}
+
+		.div-computacao > div {
+			flex: 1 1 200px;
+			margin: 10px;
+		}
+
+		.computacao {
+			background-color: rgb(255,255,255);	
+			color: rgb(91, 94, 100);
+			text-align: left;
+			padding: 20px;
+		}
+
+/* divs acadêmica */
+		.div-outros-computacao {
+			margin-top: 30px;
+		}
+
+		.div-outros {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 80%;
+			margin: auto;
+		} 
+
+		.div-outros > div {
+			flex: 1 1 300px;
+			margin: 10px;
+		}
+
+		.outros {
+			background-color: rgb(255,255,255);	
+			color: rgb(91, 94, 100);
+			text-align: left;
+			padding: 20px;
+		}
+
+/* h e p */
+		.h2-title{
+			color: rgb(255,255,255);
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.h2-subtitle {
+			color: rgb(255,255,255);
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		
+		h3 {
+			font-size: 1.25rem;
+		}
+		
+		h4 {
+			font-size: 1.15rem;
+		}
+		
+		h5 {
+			font-size: 1.1rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
+
+/* links */
+		p li:hover {
+  		background-color: rgb(114, 112, 112);
+		}
+
+		p a {
+  		color: rgb(66, 18, 45);
+  		text-decoration: none;
+		}
+
+		p a:hover {
+  		color: rgb(114, 112, 112);
+  		font-weight: 900;
+		}
+
+/* media query */
+		@media screen and ( max-width : 1024px ) {
+
+			.div-academica> div {
+				flex: 1 1 500px;
+			}
+
+			.div-computacao > div {
+				flex: 1 1 500px;
+			}
+
+			.div-outros > div {
+				flex: 1 1 500px;
+			}	
+			
+		}
+
+	</style>
 </head>
-<style>
-	/* article */
-	.academica-section{
-		align-items: center;
-		background-color: rgb(66,18,45);
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 50px 0px;
-	}
-
-	.h2-academica{
-		background-color: rgb(255,255,255);
-		color: rgb(66,18,45);
-		text-align: center;
-		width: 80%;
-		padding: 20px 70px;
-	}
-
-	.academica {
-		align-items: flex-start;
-		background-color: rgb(255,255,255);	
-		color: rgb(66,18,45);
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		width: 100%;
-		text-align: left;
-		padding: 20px;
-		width: 80%;
-	}
-
-	.outros-section{
-		align-items: center;
-		background-color: rgb(91, 94, 100);
-		display: flex;
-		flex-direction: column;
-		padding: 50px 0px;
-		width: 100%;
-	}
-
-	.h2-outros{
-		background-color: rgb(255,255,255);
-		color: rgb(91, 94, 100);
-		text-align: center;
-		width: 80%;
-		padding: 20px 70px;
-	}
-
-	.computacao-outros {
-		align-items: flex-start;
-		background-color: rgb(255,255,255);	
-		color: rgb(66,18,45);
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		width: 100%;
-		text-align: left;
-		padding: 20px;
-		width: 80%;
-	}
-	
-	.h3-subtitle {
-		font-size: 130%;
-
-	}
-</style>
 
 <body>
 
@@ -100,6 +174,7 @@
 						<li><a href="perfil.html">Mais sobre Ana</a></li>
 						<li><a href="experiencia.html">Experiências Profissionais</a></li>
 						<li><a href="formacao.html">Formação Acadêmica e Cursos</a></li>
+						<li><a href="portifolio.html">Portifólio</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -109,130 +184,133 @@
 
 <!-- início formação acadêmica -->
 	<article>
-		<section id="academica-section" class="academica-section">
-			<h2 class="h2-academica">FORMAÇÃO ACADÊMICA</h2>
-
-			<div class="academica">
-				<div class="sustentabilidade"> 
+		<section class="academica-section">
+			<h2 class="h2-title">FORMAÇÃO ACADÊMICA</h2>
+			<div class="div-academica">
+				<div class="academica"> 
 					<h3>SUSTENTABILIDADE DAS EDIFICAÇÕES |<br>
-					PÓS-GRADUAÇÃO LATO SENSU | <br>
-					UNIVERSIDADE PRESBITERIANA MACKENZIE |<br>
-					JAN 2010 - DEZ 2011 | SÃO PAULO, SP</h3>
-					<p>Tema: “Diretrizes Sustentáveis para Renovação <br> dos Edifícios na Região Central de São Paulo”</p>
+						PÓS-GRADUAÇÃO LATO SENSU |
+					</h3>
+					<h4>UNIVERSIDADE PRESBITERIANA MACKENZIE |</h4>
+					<h5>JAN 2010 - DEZ 2011 | SÃO PAULO, SP |</h5>
+					<p>Tema: “Diretrizes Sustentáveis para Renovação dos Edifícios na Região Central de São Paulo”</p>
 				</div>
 
-				<div class="arquitetura"> 
+				<div class="academica"> 
 			 		<h3>ARQUITETURA E URBANISMO |<br>
-					GRADUAÇÃO | <br>
-					CENTRO UNIVERSITÁRIO <br> BELAS ARTES DE SÃO PAULO |<br>
-					JAN 2004 - DEZ 2008 | SÃO PAULO, SP</h3>
-					<p>Projeto: “Hotel-SPA Sustentável”</a></p>
+						GRADUAÇÃO |
+					</h3>
+					<h4>CENTRO UNIVERSITÁRIO BELAS ARTES DE SÃO PAULO |</h4>
+					<h5>JAN 2004 - DEZ 2008 | SÃO PAULO, SP |</h5>
+					<p>Projeto: “Hotel-SPA Sustentável”</p>
 				</div>
 
-				<div class="interiores"> 
+				<div class="academica"> 
 					<h3>DESIGN DE INTERIORES |<br>
-					CURSO TÉCNICO |<br>
-					ESCOLA PANAMERICANA DE ARTES |<br>
-					MAR 1999 – NOV 2001 | SÃO PAULO, SP </h3> 
+						CURSO TÉCNICO |
+					</h3> 
+					<h4>ESCOLA PANAMERICANA DE ARTES |</h4>
+					<h5>MAR 1999 – NOV 2001 | SÃO PAULO, SP |</h5>
 				</div>
-			</div>	
+			</div>
 		</section>
 
-		<section class="outros-section" id="outros-section">
-			<h2 class="h2-outros">OUTROS CURSOS</h2>
-			<div class="computacao-outros">
-				<div class="outros">
-					<div class="outros-title">
-						<h3 class="h3-subtitle">CURSOS DE DESENVOLVIMENTO DE <br> SOFTWARE E COMPUTAÇÃO GRÁFICA</h3><br>
-					</div>
-
-					<div class="trybe">
+<!-- início Outros Cursos / Computação -->
+		<section class="outros-section">
+			<h2 class="h2-title">OUTROS CURSOS</h2>
+			<div class="div-computacao-outros">
+				<h2 class="h2-subtitle">CURSOS DE DESENVOLVIMENTO DE SOFTWARE E COMPUTAÇÃO GRÁFICA</h2><br>
+				<div class="div-computacao">
+					<div class="computacao">
 						<h3>DESENVOLVIMENTO DE SOFTWARE |<br>
-						TRYBE |<br>
-						MAR 2020 - PREVISÃO MAR 2021 | SÃO PAULO, SP </h3> <br>
+						<h4>TRYBE |</h4>
+						<h5> 2020 - PREVISÃO MAR 2021 | SÃO PAULO, SP |</h5> 
+						<p><a href="portifolio.html" target="_blank">Portifólio</a></p>
 					</div>
 
-					<div class="dmax">
-						<h3>MAQUETE ELETRÔNICA 3D MAX |<br> 
-						ALPHACHANNEL |<br> 
-						SET 2013 | SÃO PAULO, SP</h3><br>
+					<div class="computacao">
+						<h3>MAQUETE ELETRÔNICA 3D MAX |</h3>
+						<h4>ALPHACHANNEL |</h4>
+						<h5>SET 2013 | SÃO PAULO, SP |</h5>
 					</div>	
 
-					<div class="revit">
-						<h3>CURSO BÁSICO REVIT 2008 |<br>
-						SENAC |<br>
-						JUL 2009 | SÃO PAULO, SP</h3><br>
+					<div class="computacao">
+						<h3>CURSO BÁSICO REVIT 2008 |</h3>
+						<h4>SENAC |</h4>
+						<h5>JUL 2009 | SÃO PAULO, SP |</h5>
 					</div>
 
-					<div class="autocad"> 
-						<h3>CURSO CAD DESIGN 2004 |<br>
-						SENAC |<br>
-						OUT 2006 | SÃO PAULO, SP </h3><br>
+					<div class="computacao"> 
+						<h3>CURSO CAD DESIGN 2004 |</h3>
+						<h4>SENAC |</h4>
+						<h5>OUT 2006 | SÃO PAULO, SP |</h5> 
 					</div>
 				</div>
-				<div class="outros">
-					<div class="outros-title">
-						<h3 class="h3-subtitle">OUTROS CURSOS</h3><br>
+			</div>
+
+<!-- início Outros Cursos / Computação -->
+			<div class="div-outros-computacao">
+				<h2 class="h2-subtitle">OUTROS CURSOS</h2>
+					<div class="div-outros">
+						<div class="outros"> 					
+							<h3>CURSO MESTRE DE OBRAS |</h3>
+							<h4>INSTITUTO DA CONSTRUÇÃO |</h4>
+							<h5>MAR 2017 | SÃO PAULO, SP |</h5>
 						</div>
-				
-					<div class="obra"> 					
-						<h3>CURSO MESTRE DE OBRAS |<br> 
-						INSTITUTO DA CONSTRUÇÃO |<br>
-						MAR 2017 | SÃO PAULO, SP</h3><br>
-					</div>
 
-					<div class="paisagismo">	
-						<h3>RECURSOS PAISAGÍSTICOS  |<br>
-						UMAPAZ |<br> 
-						JUN 2016 | SÃO PAULO, SP</h3><br>
-					</div>
+						<div class="outros">	
+							<h3>RECURSOS PAISAGÍSTICOS  |</h3>
+							<h4>UMAPAZ |</h4> 
+							<h5>JUN 2016 | SÃO PAULO, SP |</h5>
+						</div>
 
-					<div class="jardinagem">
-						<h3>JARDINAGEM |<br>
-						UMAPAZ|<br>
-						NOV 2015 | SÃO PAULO, SP</h3><br>
-					</div>
+						<div class="outros">
+							<h3>JARDINAGEM |</h3>
+							<h4>UMAPAZ|</h4>
+							<h5>NOV 2015 | SÃO PAULO, SP |</h5>
+						</div>
 
-					<div class="marcenaria">	
-						<h3>MARCENARIA | PROJETO E CONSTRUÇÃO 1 |<br>
-						OFICINALAB |<br>
-						MAI 2015 | SÃO PAULO, SP</h3><br>
-					</div>
-				</div>	
-				<div class="outros">
-					<div class="aqua">
-						<h3>AQUA |<br>
-						FORMAÇÃO DE AUDITORES AQUA |<br>
-						DOMINANDO O REFERENCIAL TÉCNICO AQUA |<br>
-						INTRODUÇÃO AO REFERENCIAL TÉCNICO AQUA |<br>
-						FUNDAÇÃO VANZOLINI |<br>
-						DEZ 2010 | SÃO PAULO, SP</h3><br>
-					</div>
+						<div class="outros">	
+							<h3>MARCENARIA | PROJETO E CONSTRUÇÃO 1 |</h3>
+							<h4>OFICINALAB |</h4>
+							<h5>MAI 2015 | SÃO PAULO, SP |</h5>
+						</div>
 
-					<div class="bio">
-						<h3>BIO ARQUITETURA E BIO DESIGN |<br> 
-						UNIPAZ |<br>
-						MAI 2009 | SÃO PAULO, SP</h3><br>
-					</div>
+						<div class="outros">
+							<h3>AQUA |<br>
+								FORMAÇÃO DE AUDITORES AQUA |<br>
+								DOMINANDO O REFERENCIAL TÉCNICO AQUA |<br>
+								INTRODUÇÃO AO REFERENCIAL TÉCNICO AQUA |
+							</h3>
+							<h4>FUNDAÇÃO VANZOLINI |</h4>
+							<h5>DEZ 2010 | SÃO PAULO, SP |</h5>
+						</div>
 
-					<div class="feng-shui">
-						<h3>FENG SHUI |<br>
-						ESCOLA ESTRELA DA FELICIDADE |<br>
-						NOV 2000 | SÃO PAULO, SP</h3><br>
+						<div class="outros">
+							<h3>BIO ARQUITETURA E BIO DESIGN |</h3>
+							<h4>UNIPAZ |</h4>
+							<h5>MAI 2009 | SÃO PAULO, SP |</h5>
+						</div>
+						<div class="outros">
+							<h3>FENG SHUI |</h3>
+							<h4>ESCOLA ESTRELA DA FELICIDADE |</h4>
+							<h5>NOV 2000 | SÃO PAULO, SP |</h5>
+						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</section>
 	</article>
 
 <!-- início rodapé -->
 	<footer class="footer-section">
 		<div class="footer">
-        	<ul>
-				<li><a href=""><i class="fab fa-facebook"></i></a></li>
-				<li><a href=""><i class="fab fa-instagram"></i></a></li>
-          		<li><a href=""><i class="fab fa-twitter"></i></a></li>
-          		<li><a href=""><i class="fab fa-github"></i></a></li>
+      <ul>
+				<li><a href="https://www.facebook.com/ana.higo.5" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/ah_anahigo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/anahigo" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://github.com/anahigo" target="_blank"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/ana-higo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 			</ul>
 		</div>	
 	</footer>
